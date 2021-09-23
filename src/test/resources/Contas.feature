@@ -1,8 +1,9 @@
 # language: pt
 
+@funcionais
 Funcionalidade: Contas
 
-Como um usuário
+Como um usuï¿½rio
 Quero cadastrar contas
 Para poder distribuir meu dinheiro de uma forma mais organizada
 
@@ -12,23 +13,16 @@ Contexto:
 	E a senha "pass"
 	E seleciono entrar
 	Entao visualizo a pagina principal
-
-Cenario: Deve inserir uma conta com sucesso
 	Quando seleciono Contas
 	E seleciono Adicionar
-	E informo a conta "Conta de Teste"
-	E seleciono Salvar
-	Entao a conta eh inserida com sucesso
 
-Cenario: Nao deve inserir uma conta sem nome
-	Quando seleciono Contas
-	E seleciono Adicionar
+Esquema do Cenario: Deve validar regra de negocio
+	E informo a conta "<Conta>"
 	E seleciono Salvar
-	Entao sou notificar que o nome da conta eh obrigatorio
-
-Cenario: Nao deve inserir uma conta com nome ja existente
-	Quando seleciono Contas
-	E seleciono Adicionar
-	E informo a conta "Conta de Teste"
-	E seleciono Salvar
-	Entao sou notificado que ja existe uma conta com esse nome
+	Entao recebo a mensagem "<Mensagem>"
+	
+Exemplos:
+|Conta         |Mensagem|
+|Conta de Teste|Conta adicionada com sucesso!|
+|              |Informe o nome da conta      |
+|Conta de Teste|JÃ¡ existe uma conta com esse nome!|

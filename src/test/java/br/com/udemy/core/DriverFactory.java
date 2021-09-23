@@ -17,7 +17,7 @@ public class DriverFactory {
 		return browser;
 	}
 	
-	public void killDriver() {
+	public static void killDriver() {
 		if (browser != null) {
 			browser.quit();
 			browser = null;

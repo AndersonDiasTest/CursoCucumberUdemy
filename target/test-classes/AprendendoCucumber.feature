@@ -22,25 +22,25 @@ Cenario: Deve calcular atraso na entrega
 	Quando a entrega atrasar em 2 "meses"
 	Entao a entrega sera efetuada em 05/06/2018
 	
-Cenário: Deve criar steps genéricos para estes passos
-    Dado que o ticket é AF345
-    Dado que o valor da passagem é R$ 230,45
-    Dado que o nome do passageiro é "Fulano da Silva"
-    Dado que o telefone do passageiro é 9999-9999
+Cenario: Deve criar steps genericos para estes passos
+    Dado que o ticket e AF345
+    Dado que o valor da passagem e R$ 230,45
+    Dado que o nome do passageiro e "Fulano da Silva"
+    Dado que o telefone do passageiro e 9999-9999
     Quando criar os steps
-    Então o teste vai funcionar
+    Entao o teste vai funcionar
 
-Cenário: Deve reaproveitar os steps "Dado" do cenário anterior
-    Dado que o ticket é AB167
-    Dado que o ticket especial é AB167
-    Dado que o valor da passagem é R$ 1120,23
-    Dado que o nome do passageiro é "Cicrano de Oliveira"
-    Dado que o telefone do passageiro é 9888-8888
+Cenario: Deve reaproveitar os steps "Dado" do cenario anterior
+    Dado que o ticket e AB167
+    Dado que o ticket especial e AB167
+    Dado que o valor da passagem e R$ 1120,23
+    Dado que o nome do passageiro e "Cicrano de Oliveira"
+    Dado que o telefone do passageiro e 9888-8888
 
-Cenário: Deve negar todos os steps "Dado" dos cenários anteriores
-    Dado que o ticket é CD123
-    Dado que o ticket é AG1234
-    Dado que o valor da passagem é R$ 1.1345,56
-    Dado que o nome do passageiro é "Beltrano Souza Matos de Alcântara Azevedo"
-    Dado que o telefone do passageiro é 1234-5678
-    Dado que o telefone do passageiro é 999-2223
+Cenario: Deve negar todos os steps "Dado" dos cenarios anteriores
+    Dado que o ticket e CD123
+    Dado que o ticket e AG1234
+    Dado que o valor da passagem e R$ 1.1345,56
+    Dado que o nome do passageiro e "Beltrano Souza Matos de Alcentara Azevedo"
+    Dado que o telefone do passageiro e 1234-5678
+    Dado que o telefone do passageiro e 999-2223

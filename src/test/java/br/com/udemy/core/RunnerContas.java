@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		plugin = "pretty",
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
-		dryRun = false,
+		dryRun = true,
 		publish = false
 //		strict = false
 		)

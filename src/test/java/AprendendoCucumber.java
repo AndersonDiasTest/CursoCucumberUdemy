@@ -25,7 +25,7 @@ public class AprendendoCucumber {
 
 	@Entao("terceiro texto")
 	public void terceiro_texto() {
-	    System.out.println("Então");
+	    System.out.println("Entao");
 	}
 	
 	@Dado("que o valor do contador eh {int}")
@@ -53,7 +53,7 @@ public class AprendendoCucumber {
 	    entrega = cal.getTime();
 	}
 	
-	@Quando("a entrega atrasar em {int} {string}")
+	@Quando("^a entrega atrasar em (\\d+) (.+)$")
 	public void aEntregaAtrasarEmDias(Integer int1, String tempo) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(entrega);
@@ -66,7 +66,7 @@ public class AprendendoCucumber {
 		entrega = cal.getTime();		
 	}
 	
-	@Entao("a entrega sera efetuada em {int}\\/{int}\\/{int}")
+	@Entao("^a entrega sera efetuada em (\\d+)\\/(\\d+)\\/(\\d+)$")
 	public void aEntregaSeraEfetuadaEm(Integer int1, Integer int2, Integer int3) {
 	    System.out.println(int1);
 	}

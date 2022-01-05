@@ -3,7 +3,7 @@
 @funcionais
 Funcionalidade: Contas
 
-Como um usu�rio
+Como um usuario
 Quero cadastrar contas
 Para poder distribuir meu dinheiro de uma forma mais organizada
 

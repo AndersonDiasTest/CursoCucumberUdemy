@@ -7,6 +7,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+		features = "src/test/java/",
 		plugin = "pretty",
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
